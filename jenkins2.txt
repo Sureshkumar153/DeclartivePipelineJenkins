@@ -1,0 +1,24 @@
+    
+node
+{
+    stage('commit')
+    {
+        echo "This is code download from GIT project repository"
+    }
+    stage('Build')
+    {
+        echo "This is Build project from maven"
+    }
+    stage('Test')
+    {
+        echo "Thi sis test project implementation using selenium"
+    }
+    stage('Release')
+    {
+        echo "This is delivery using Docker"
+    }
+    stage('Monitor')
+    {
+        echo "This is Application Logs Monitoring using tool splunk"
+    }
+}
